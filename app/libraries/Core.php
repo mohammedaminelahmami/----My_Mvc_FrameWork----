@@ -44,11 +44,11 @@
                 {
                     call_user_func_array([$controller, $this->method], $this->parameters);
                 }else{
-                    echo "Error 404 .1";
+                    require_once APPROOT . '/views/error404.php';
                 }
 
             }else{
-                echo "Error 404 .2";
+                require_once APPROOT . '/views/error404.php';
             }
         }
     }
